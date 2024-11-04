@@ -10,6 +10,7 @@
     --header-bg-color: #1b1f24;
     --button-hover-bg-color: #444;
     --link-color: aliceblue;
+    --text-color: aliceblue;
     --transition-duration: 0.3s;
 }
 
@@ -26,7 +27,7 @@ body {
     box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
+
     header {
         background-color: var(--dark-primary);
         padding: 20px;
@@ -78,10 +79,23 @@ body {
         background-color: var(--dark-primary);
         cursor: pointer;
         transition: background-color 0.3s;
-    }
+        &:hover{background-color: var(--primary);
+            color: var(--dark-primary);
+        }
+    
+    }        
 
-    header button:hover {
-        background-color: var(--primary);
-        color: var(--dark-primary);
+    /* Section: hero page */
+    section.hero-section {
+        background-color:var(--dark-primary);
+        color:var(--text-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* height: 100vh; */
+        padding: 20px 120px 0px 50px;
+    } 
+    .hero-section-title {
+        font-size: 37px;
+        font-weight: bolder;
     }
-}
