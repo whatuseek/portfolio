@@ -16,7 +16,7 @@
 body {
     font-family: "Itim", sans-serif;
     color: var(--text-color);
-    line-height: 1.5;
+    /* line-height: 1.5; */
     font-family: "Raleway", sans-serif;
 }
 
@@ -26,64 +26,62 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    background-color: var(--dark-primary);
-    padding: 20px;
-    color: var(--link-color);
+@media (max-width: 600px) {
+    header {
+        background-color: var(--dark-primary);
+        padding: 20px;
+        color: var(--link-color);
 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
 
-header a {
-    text-decoration: none;
-    color: var(--link-color);
-
-    &:hover {
-        color: var(--primary);
     }
-    /* flex: 1; */
-}
 
-.logo {
-    color: var(--primary);
-    letter-spacing: 15px;
-}
+    header a {
+        text-decoration: none;
+        color: var(--link-color);
 
-ul {
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-}
+        &:hover {
+            color: var(--primary);
+        }
 
-ul li {
-    margin-left: 20px;
-}
-
-ul li a {
-    text-decoration: none;
-    color: var(--link-color);
-
-    &:hover {
-        /* background-color:var(--button-hover-bg-color); */
-        color: var(--primary);
+        /* flex: 1; */
     }
-}
 
-header button {
-    padding: 10px;
-    font-weight: bold;
-    border-radius: 7px;
-    color: var(--primary);
-    border: 1px solid var(--primary);
-    background-color: var(--dark-primary);
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+    .logo {
+        color: var(--primary);
+        letter-spacing: 15px;
+    }
 
-header button:hover {
-    background-color: var(--primary);
-    color: var(--dark-primary);
+    ul {
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    ul li {
+        margin-left: 20px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: var(--link-color);
+    }
+
+    header button {
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 7px;
+        color: var(--primary);
+        border: 1px solid var(--primary);
+        background-color: var(--dark-primary);
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    header button:hover {
+        background-color: var(--primary);
+        color: var(--dark-primary);
+    }
 }
