@@ -100,6 +100,9 @@ header button {
     }
 
 }
+.wordings{
+    margin-left: 40px;
+}
 
 /* Section: hero page */
 section.hero-section {
