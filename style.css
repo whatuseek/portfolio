@@ -31,21 +31,23 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 
 header {
     margin-top: 30px;
+    margin-right:  30px;
+    margin-left: 30px;
     background-color: var(--dark-primary);
     padding: 20px;
     color: var(--link-color);
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-between;
     align-items: center;
     /* height: ; */
-    
+
 
 }
 
@@ -62,7 +64,7 @@ header a {
 
 .logo {
     color: var(--primary);
-    letter-spacing: 15px;
+    letter-spacing: 25px;
     font-weight: bolder;
 }
 
@@ -78,7 +80,7 @@ header ul li {
 
 header ul li a {
     text-decoration: none;
-    color: var(--link-color);    
+    color: var(--link-color);
 }
 
 header button {
@@ -87,7 +89,7 @@ header button {
     font-weight: 700;
     border-radius: 7px;
     color: var(--primary);
-    border: 1px  var(--primary);
+    border: 1px var(--primary);
     background-color: var(--dark-primary);
     cursor: pointer;
     transition: background-color 0.3s;
@@ -116,104 +118,143 @@ section.hero-section {
 }
 
 .social-icons {
-    
+
     margin: 20px 0;
 }
+
 ul.social-icons {
     list-style: none;
     display: flex;
 }
-.social-icons li > a{
+
+.social-icons li>a {
     margin-right: 15px;
     /* text-decoration: none; */
     color: var(--link-color);
+
     /* margin-right: 20px; */
     &:hover {
         color: var(--primary);
     }
 }
-.social-icons a > i.fa-linkedin{
+
+.social-icons a>i.fa-linkedin {
     &:hover {
         /* border-radius: 25px; */
         /* background-color:var(--link-color); */
-        color:rgb(59 130 246 );
+        color: rgb(59 130 246);
         /* transition: background-color 0.3s; */
     }
-    
+
 }
-.social-icons a > i.fa-github{
+
+.social-icons a>i.fa-github {
     &:hover {
         /* border-radius: 25px; */
         /* background-color:var(--link-color); */
-        color:#333;
+        color: #333;
         /* transition: background-color 0.3s; */
     }
-    
+
 }
-.social-icons a > i.fa-envelope{
+
+.social-icons a>i.fa-envelope {
     &:hover {
         /* border-radius: 25px; */
         /* background-color:var(--link-color); */
-        color:#ae5959;
+        color: #ae5959;
         /* transition: background-color 0.3s; */
     }
-    
+
 }
-.social-icons a > i.fa-mobile-android-alt{
+
+.social-icons a>i.fa-mobile-android-alt {
     &:hover {
         /* border-radius: 25px; */
         /* background-color:var(--link-color); */
-        color:#000000;
+        color: #000000;
         /* transition: background-color 0.3s; */
     }
-    
+
 }
-.social-icons a > i.fa-whatsapp{
+
+.social-icons a>i.fa-whatsapp {
     &:hover {
         /* border-radius: 25px; */
         /* background-color:var(--link-color); */
-        color:#28D146;
+        color: #28D146;
         /* transition: background-color 0.3s; */
     }
-    
+
 }
 
-.hero-img{
-    /* border-radius: 50%; */
-    
-    /* border: 5px solid var(--primary); */
-    /* box-shadow: 0px 0px 10px .1px var(--primary); */
-    border-radius:25%;
-}
-
-/* rounded image */
 
 
 
-.btn-its-me{
+.btn-its-me {
     color: var(--primary);
     padding: 10px;
     border-style: none;
     border: 1px solid var(--primary);
     background-color: #1D595E;
     border-radius: 7px;
+
     /* display: flex; */
-    &:hover{
+    &:hover {
         color: var(--dark-primary);
         background-color: var(--primary);
     }
 }
-.btn-download-cv{
+
+.btn-download-cv {
     color: var(--primary);
     padding: 10px;
-    border-style:3px solid var(--header-bg-color);
-    box-shadow:var(--dark-primary);
+    border-style: 3px solid var(--header-bg-color);
+    box-shadow: var(--dark-primary);
     /* border: 1px solid var(--dark-primary); */
-    background-color:var(--dark-primary) ;
+    background-color: var(--dark-primary);
     border-radius: 7px;
+
     /* display: flex; */
-    &:hover{
+    &:hover {
         color: var(--dark-primary);
         background-color: var(--primary);
     }
+}
+
+.hero-img {
+    margin-left: 170px;
+    /* border-radius: 50%; */
+
+    /* border: 5px solid var(--primary); */
+    /* box-shadow: 0px 0px 10px .1px var(--primary); */
+    /* border-radius: 25%; */
+}
+
+/* rounded image */
+
+.rounded-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    /* Adjust the size as needed */
+    height: 100px;
+    /* Adjust the size as needed */
+    border-radius: 50%;
+    /* Makes the container a circle */
+    overflow: hidden;
+    /* Ensures the image fits within the rounded area */
+    border: 2px solid #333;
+    /* Optional: Adds a border around the circle */
+    
+}
+
+.rounded-image {
+    border-radius: 70%;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the entire container */
 }
