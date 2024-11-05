@@ -181,7 +181,7 @@ ul.social-icons {
     border-radius:25%;
 }
 .btn-its-me{
-    color: var(--link-color);
+    color: var(--primary);
     padding: 10px;
     border-style: none;
     border: 1px solid var(--primary);
@@ -194,15 +194,16 @@ ul.social-icons {
     }
 }
 .btn-download-cv{
-    color: var(--dark-primary);
+    color: var(--primary);
     padding: 10px;
-    border-style: none;
-    border: 1px solid var(--dark-primary);
-    background-color:var(--primary) ;
+    border-style:3px solid var(--header-bg-color);
+    box-shadow:var(--dark-primary);
+    /* border: 1px solid var(--dark-primary); */
+    background-color:var(--dark-primary) ;
     border-radius: 7px;
     /* display: flex; */
     &:hover{
-        color: var(--primary);
-        background-color: var(--dark-primary);
+        color: var(--dark-primary);
+        background-color: var(--primary);
     }
 }
