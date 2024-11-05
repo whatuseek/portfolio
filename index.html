@@ -7,6 +7,11 @@
     <meta charset="UTF-8" />
     <!-- The viewport meta tag gives the browser instructions on how to control the page's dimensions and scaling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- The link element is used to link to external stylesheets -->
     <link rel="stylesheet" href="style.css" />
     <!-- The title element specifies a title for the document -->
@@ -41,7 +46,7 @@
             </ul>
         </nav>
         <!-- The button element represents a clickable button -->
-        <button>see my portfolio</button>
+        <button>portfolio</button>
     </header>
 
     <main>
@@ -50,21 +55,49 @@
                 <h4>Hi,</h4>
                 <h2 class="hero-section-title">
                     I'm Thaika</h2>
-                <p>A customer service associate 
-                    and freelance web developer. Currently in developing CRM
-                    ticketing project.
+                <p>A customer service associate
+                    and freelance web developer.
+                <p>
+                    <!-- Add if any -->
                 </p>
-                <div>
+                </p>
+                <ul class="social-icons">
                     <!-- social media icons will be here -->
-                </div>
+                    <li>
+                        <!-- target="_blank" used to open in new Tab -->
+                        <a href="https://www.linkedin.com/in/thaika-soofi/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/whatuseek" target="_blank"> <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="openEmailNewTab('soofigsoofi@gmail.com')"> <i
+                            class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="openPhoneNewTab('+918220016819')"> <i
+                            class="fas fa-mobile-android-alt"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/+918220016819" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+
+
+                    </li>
+                </ul>
                 <div>
-                    <button>It's me</button>
-                    <button>Download CV</button>
+                    <button class="btn-its-me">It's me</button>
+                    <button class="btn-download-cv">Download CV</button>
                 </div>
             </div>
             <div class="hero-img">
-                <img src="./image/pp_NoBg.png"
-                    alt="portfolio_image" >
+                <img src="./image/pp_NoBg.png" alt="portfolio_image">
             </div>
 
 
