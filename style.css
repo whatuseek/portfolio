@@ -288,6 +288,7 @@ ul.social-icons {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 25px;
 
 }
 
@@ -349,4 +350,15 @@ ul.social-icons {
         color: var(--primary);
         text-decoration: overline;
     }
+}
+
+/* Work Section */
+.work-section{
+    background-color: var(--dark-primary);
+    color: #FFFFFF;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
 }
