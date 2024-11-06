@@ -306,8 +306,8 @@ ul.social-icons {
     height: 200px;
     width: 150px;
     border-radius: 50%;
-    border: 1px solid var(--primary);
-    box-shadow: 5px 9px 80px;
+    /* border: 1px solid var(--primary); */
+    box-shadow: -15px 9px 30px rgba(128, 128, 128, 0.52);
 }
 
 .about-section-desc p {
