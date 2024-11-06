@@ -245,7 +245,7 @@ ul.social-icons {
     &:hover {
         background-color:var(--header-bg-color2);
         border: 1px solid var(--button-hover-bg-color2);
-        color: var(--text-color);
+        color: var(--primary);
     }
 }
 
@@ -253,10 +253,12 @@ ul.social-icons {
     color: var(--primary);
     padding: 10px;
     border: 1px solid var(--header-bg-color2);
-    box-shadow: var(--dark-primary);
+    /* box-shadow: var(--dark-primary); */
     /* border: 1px solid var(--dark-primary); */
     background-color: var(--dark-primary);
-    border-radius: 7px;
+    border-radius: 7px;   
+    width: 100px;
+
 
     /* display: flex; */
     &:hover {
