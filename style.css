@@ -50,22 +50,24 @@ body {
     color: var(--text-color);
     /* line-height: 1.5; */
     font-family: "Raleway", sans-serif;
-    /* add vh */
-    /* height: 100vh; */
     background-color: var(--dark-primary);
-    border-radius: 20px;
 }
+hr{
+    border: none;
+    border-top: 3px solid var(--dark-secondary);
+    margin-top: 30px;
+}
+    
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 
 header {
-    margin-top: 30px;
+    margin-top: px;
     margin-right: 70px;
     margin-left: 70px;
     background-color: var(--dark-primary);
@@ -73,16 +75,15 @@ header {
     color: var(--link-color);
 
     display: flex;
+    align-items:center;
     justify-content: space-between;
-    align-items: center;
-    /* height: ; */
-
-
+    
 }
 
 header a {
     text-decoration: none;
     font-size:larger;
+    margin: 0 15px;
 }
 
 header li a {
@@ -93,7 +94,7 @@ header li a {
     padding: 8px;
 
     &:hover {
-        /* margin: 1px; */
+        
         background-color: var(--dark-secondary);
         color: var(--primary);
     }
@@ -108,6 +109,7 @@ header li a {
 
 header ul {
     display: flex;
+    justify-items: center;
     text-decoration: none;
     list-style: none;
 }
@@ -121,8 +123,7 @@ header ul li a {
     color: var(--link-color);
 }
 
-header button {
-    /* margin-bottom: ; */
+/* header button {
     padding: 10px;
     font-weight: 700;
     border-radius: 7px;
@@ -135,36 +136,36 @@ header button {
     &:hover {
         background-color: var(--primary);
         color: var(--dark-primary);
-        
     }
+} */
 
-}
-
-/* Hi' I'm */
-.wordings {
-    margin-left: 70px;
-}
 
 /* Section: hero page */
-section.hero-section {
+section.hero-section{
+    margin-top: 2rem;
     background-color: var(--dark-primary);
-    color: var(--text-color);
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content:space-between;
-    /* flex-wrap: wrap; */
-    /* height: 100vh; */
-    padding: 20px 120px 0px 50px;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    
 }
 
 .hero-section-title {
     font-size: 37px;
     font-weight: 700;
 }
+.hero-section-desc{
+    font-size: 20px;
+    font-weight: 400;
+}
 
 .social-icons {
 
     margin: 20px 0;
+    font-size: larger;
+    gap: 15px;
 }
 
 ul.social-icons {
@@ -181,6 +182,9 @@ ul.social-icons {
     &:hover {
         color: var(--primary);
     }
+}
+.hero-img-div .hero-img{
+    border-radius: 25px;
 }
 
 .social-icons a>i.fa-linkedin {
@@ -232,7 +236,7 @@ ul.social-icons {
     }
 
 }
-`
+
 .btn{
     margin-bottom: 20px;
     padding: 5px;
@@ -270,43 +274,12 @@ ul.social-icons {
     }
 }
 
-.hero-img {
-    margin-left: 170px;
-    /* border-radius: 50%; */
+/* .hero-img-div {
+    width: 30%;
+    height: 30%;
 
-    /* border: 5px solid var(--primary); */
-    /* box-shadow: 0px 0px 10px .1px var(--primary); */
-    /* border-radius: 25%; */
-}
+} */
 
-/* rounded image */
-
-.rounded-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    /* Adjust the size as needed */
-    height: 100px;
-    /* Adjust the size as needed */
-    border-radius: 50%;
-    /* Makes the container a circle */
-    overflow: hidden;
-    /* Ensures the image fits within the rounded area */
-    border: 2px solid #333;
-    /* Optional: Adds a border around the circle */
-
-}
-
-.rounded-image {
-    border-radius: 10%;
-    box-shadow:inset 10px 0px 90px ;
-
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* Ensures the image covers the entire container */
-}
 
 /* About me */
 .about-section {
@@ -317,7 +290,7 @@ ul.social-icons {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 
 }
 
@@ -410,13 +383,13 @@ ul.social-icons {
     max-width: 400px;
     text-align:left;
     margin-bottom: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    transition: border-color 0.3s;
     &:hover{
         /* if we give border layout is slightly Blah Blah! */
         /* border: 1px solid var(--primary); */
         background-color:#1e303b94;
         /* color: var(--primary); */
-        transition: background-color 0.3s, color 0.3s;
-        transition: border-color 0.3s;
 
     }
     
@@ -429,6 +402,7 @@ ul.social-icons {
     background-color: var(--dark-primary);
     padding: 15px;
     border-radius: 50px;
+    transition: background-color .7s, color 1s;
     &:hover{
         background-color: var(--button-hover-bg-color2);
         color: var(--dark-primary);
@@ -452,6 +426,13 @@ ul.social-icons {
     color: white;
     border-radius: 10px;
     padding: 8px;
+    transition: background-color .7s, color 1s;
+    /* transition: border-color 0.3s; */
+    &:hover{
+        background-color: var(--primary-grayed);
+        color: var(--dark-primary);
+        border-color: var(--button-hover-bg-color2);
+    }
 
 }
 
@@ -471,20 +452,20 @@ ul.social-icons {
     font-size: 35px;
     margin: 20px 0;
 }
-.contact-section-form div input{
+.contact-section-form div input,textarea{
     padding: 10px;
     margin-bottom: 15px ;
     width: 50%;
     border: none;
     border-radius: 5px;    
 }
-.contact-section-form div textarea{
+/* .contact-section-form div textarea{
     padding: 10px;
     margin-bottom: 15px ;
     width: 50%;
     border: none;
     border-radius: 5px;    
-}
+} */
 .contact-btn{
     padding: 10px 20px;
     border: none;
@@ -499,4 +480,25 @@ ul.social-icons {
         color:black;
         font-weight: bold;
     }    
+}
+footer{
+    padding: 20px;
+    text-align: end;
+    /* margin-right: 20px; */
+    background-color: var(--dark-primary);
+
+}
+footer p span{
+    color: var(--text-color);
+}
+footer p a{
+    color: var(--primary);
+    text-decoration: none;
+    padding: 5px ;
+    &:hover{
+        color: var(--primary-grayed);
+        background-color: var(--dark-secondary);
+        border-radius: 5px;
+
+    }
 }
