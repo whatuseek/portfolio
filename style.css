@@ -65,6 +65,15 @@ hr{
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    /* -webkit-touch-callout: none; */
+    
+}
+
 
 header {
     margin-top: px;
