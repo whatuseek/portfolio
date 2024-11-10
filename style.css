@@ -587,7 +587,12 @@ footer p a {
     .work-section-box {
         margin-bottom: 20px;
         width: 100%;
+    }
+    /* Contact */
 
+    .contact-section form input, textarea{
+        width: 100%;
+        columns: 30;
     }
 
 
