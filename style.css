@@ -594,7 +594,16 @@ footer p a {
         width: 100%;
         columns: 30;
     }
-
+    .work-section-box{
+        margin-bottom: 20px;
+        width: 100%;
+        margin-left: 0;
+    }
+    /* COntact */
+    .contact-section form input, textarea{
+        width: 100%;
+        /* columns: 30; */
+    }
 
 
 }
